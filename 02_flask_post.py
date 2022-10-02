@@ -1,3 +1,4 @@
+##02_flask_post.py
 from flask import Flask, jsonify, request
 app = Flask('server post')
 @app.route('/',methods=['POST']) #aca definimos q recibe requests POST
@@ -13,4 +14,4 @@ def predict(): #la funcion q se ejecuta
         # en esta linea, transformamos el diccionario en json con jsonify (funcionalidad de flask)
         # este json es incorporado en el cuerpo de la respuesta
     return jsonify(resp)
-app.run(port=8000,host='0.0.0.0' )# host local puerto el que quieras
+app.run(host='127.0.0.1', port=5001)

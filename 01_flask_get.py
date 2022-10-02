@@ -1,3 +1,4 @@
+##01_flask_get.py
 from flask import Flask, jsonify, request
 app = Flask('Servidor Get') #nombre de la app
 @app.route('/',methods=['GET']) #metodo http que va a usar
@@ -9,4 +10,4 @@ def funcionprincipal():#no importa el nombre el decorador se encarga
     except:
         resp='no se envio la variable a'
     return(resp)
-app.run(port=8000,host='0.0.0.0' )# host local puerto el que quieras
+app.run(host='127.0.0.1',  port=5002 )# host local puerto el que quieras
