@@ -15,5 +15,5 @@ vect = CountVectorizer(min_df=5, ngram_range=(1,2)).fit(X_train)
 X_train_vectorized = vect.transform(X_train)
 model = LogisticRegression(max_iter=5000)
 model.fit(X_train_vectorized, y_train)
-from joblib import dump, load
+from joblib import dump
 dump([model,vect], 'model_vect.joblib') 
