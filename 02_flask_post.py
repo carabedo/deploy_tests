@@ -1,5 +1,7 @@
 ##02_flask_post.py
 from flask import Flask, jsonify, request
+import numpy as np
+
 app = Flask('server post')
 @app.route('/',methods=['POST']) #aca definimos q recibe requests POST
 def predict(): #la funcion q se ejecuta 

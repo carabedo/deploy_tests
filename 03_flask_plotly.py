@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from flask import jsonify, request
+from flask import request
 import pandas as pd
 import json
 import plotly
