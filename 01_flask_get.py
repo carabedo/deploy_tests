@@ -8,7 +8,7 @@ app = Flask('Servidor Get') #nombre de la app
 #para esto le agrego un decorador a una funcion comun
 #un decorador solo es una @ antes de la definicion de la funcion:
 
-@app.route('/',methods=['GET']) #metodo http que va a usar
+@app.route('/') #metodo http que va a usar
 def funcionprincipal():
     # no importa el nombre el decorador se encarga de definir
     # que esta funcion se va a ejecutar cuando
@@ -21,6 +21,6 @@ def funcionprincipal():
     except:
         resp='no se envio la variable a'
     return(resp)
-app.run(host='127.0.0.1',  port=5002 )
+app.run(host='127.0.0.1',  port=6000 )
 
 # host local puerto el que quieras

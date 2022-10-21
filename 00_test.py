@@ -88,4 +88,4 @@ for (x of arrayItems) {
     }
 </style>'''
 
-app.run(debug=True, port=8000)
+app.run(debug=True, port=6000)

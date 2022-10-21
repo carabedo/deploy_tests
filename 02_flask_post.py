@@ -16,4 +16,4 @@ def predict(): #la funcion q se ejecuta
         # en esta linea, transformamos el diccionario en json con jsonify (funcionalidad de flask)
         # este json es incorporado en el cuerpo de la respuesta
     return jsonify(resp)
-app.run(host='127.0.0.1', port=5001)
+app.run(host='127.0.0.1', port=6000)
