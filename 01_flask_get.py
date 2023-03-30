@@ -21,6 +21,6 @@ def funcionprincipal():
     except:
         resp='no se envio la variable a'
     return(resp)
-app.run(host='127.0.0.1',  port=6000 )
+app.run(host='127.0.0.1',  port=5002 )
 
 # host local puerto el que quieras
